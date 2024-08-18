@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SinglePageApp</string>
+    <string name="app_name">Clothes</string>
     <string name="sizeText">Size</string>
     <string name="colorText">Color</string>
     <string name="aciklama">Feel the lightness without getting cold 😎</string>

@@ -76,7 +76,7 @@ fun Anasayfa() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues),
-            verticalArrangement = Arrangement.spacedBy((ekranYuksekligi*0.1).dp),
+            verticalArrangement = Arrangement.spacedBy((ekranYuksekligi*0.018).dp),
 
 
             ) {
@@ -85,7 +85,7 @@ fun Anasayfa() {
                 painter = painterResource(id = R.drawable.mont),
                 contentDescription = "",
                 modifier = Modifier
-                    .padding(12.dp)
+                    .padding((ekranYuksekligi*0.012).dp)
                     .clip(RoundedCornerShape(16.dp)),
 
 
@@ -96,11 +96,11 @@ fun Anasayfa() {
                 color = YaziRenk1,
                 fontFamily = oswald,
                 fontWeight = FontWeight.Bold,
-                fontSize = 26.sp,
+                fontSize = (ekranGenisligi*0.0625).sp,
                 textAlign = TextAlign.Start,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 18.dp, top = 0.dp, bottom = 0.dp)
+                    .padding(start = (ekranYuksekligi*0.020).dp, top = 0.dp, bottom = 0.dp)
 
             )
             Row(
@@ -111,22 +111,22 @@ fun Anasayfa() {
                     painter = painterResource(id = R.drawable.uniqlo),
                     contentDescription = "Logo",
                     modifier = Modifier
-                        .padding(start = 18.dp, end = 4.dp)
-                        .size(20.dp)
-                        .clip(RoundedCornerShape(4.dp))
+                        .padding(start = (ekranYuksekligi*0.020).dp, end = (ekranYuksekligi*0.008).dp)
+                        .size((ekranGenisligi*0.0525).dp)
+                        .clip(RoundedCornerShape((ekranGenisligi*0.01).dp))
 
                 )
                 Text(
                     text = "Uniqe",
                     color = YaziRenk1,
 
-                    textAlign = TextAlign.Start, modifier = Modifier.padding(end = 2.dp)
+                    textAlign = TextAlign.Start, modifier = Modifier.padding(end = (ekranGenisligi*0.005).dp)
                 )
                 Image(
                     painter = painterResource(id = R.drawable.verified),
                     contentDescription = "verified",
                     modifier = Modifier
-                        .size(16.dp)
+                        .size((ekranYuksekligi*0.025).dp)
 
                 )
 
@@ -138,17 +138,17 @@ fun Anasayfa() {
                 fontFamily = oswald,
                 color = YaziRenk2,
 
-                fontSize = 16.sp,
+                fontSize = (ekranGenisligi*0.04).sp,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 18.dp, bottom = 0.dp, top = 0.dp)
+                    .padding(start = (ekranYuksekligi*0.020).dp, bottom = 0.dp, top = 0.dp)
                     .size(20.dp)
 
             )
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 12.dp, end = 16.dp, top = 0.dp, bottom = 0.dp),
+                    .padding(start = (ekranYuksekligi*0.020).dp, end = 16.dp, top = 0.dp, bottom = 0.dp),
                 horizontalArrangement = Arrangement.Start
             ) {
                 sizes.forEach { size ->
@@ -180,13 +180,13 @@ fun Anasayfa() {
                 fontFamily = oswald,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 18.dp, top = 0.dp, bottom = 2.dp)
+                    .padding(start = (ekranYuksekligi*0.020).dp, top = 0.dp, bottom = 2.dp)
             )
 
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 20.dp, end = 16.dp),
+                    .padding(start = (ekranYuksekligi*0.03).dp, end = 16.dp),
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 ColorOption(c1, selectedColor.value == c1) {
